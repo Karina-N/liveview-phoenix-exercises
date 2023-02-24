@@ -20,7 +20,7 @@ defmodule LiveViewStudioWeb.FlightsLive do
     ~H"""
     <h1>Find a Flight</h1>
     <div id="flights">
-      <form phx-submit="search" phx-change="suggest">
+      <form phx-submit="search" phx-change="search">
         <input
           type="text"
           name="airport"

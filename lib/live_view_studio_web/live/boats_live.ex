@@ -5,6 +5,12 @@ defmodule LiveViewStudioWeb.BoatsLive do
   alias LiveViewStudio.Boats
   import LiveViewStudioWeb.CustomComponents
 
+  # if I use 'alias' -> alias LiveViewStudioWeb.CustomComponents :
+  # <CustomComponents.promo expiration={2}>
+
+  # if I use 'import' -> import LiveViewStudioWeb.CustomComponents :
+  # <.promo expiration={2}>
+
   def mount(_params, _session, socket) do
     socket =
       assign(socket,

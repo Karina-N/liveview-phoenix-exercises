@@ -20,6 +20,8 @@ defmodule LiveViewStudioWeb.FlightsLive do
     ~H"""
     <h1>Find a Flight</h1>
     <div id="flights">
+    <%!-- phx-change="suggest" --> to get suggestions on screen --%>
+    <%!-- phx-change="search" --> to search while you type --%>
       <form phx-submit="search" phx-change="search">
         <input
           type="text"
